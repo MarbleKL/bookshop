@@ -19,7 +19,7 @@ import java.util.*;
 @Setter
 @Entity
 @EntityListeners(AuditingEntityListener.class)
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id",scope = Book.class)
 public class Book implements Serializable {
 
 
