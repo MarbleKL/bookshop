@@ -30,13 +30,13 @@ public class UserController {
         return bookSet;
     }
 
-    @RequestMapping(value = "/book",method = RequestMethod.POST)
-    public String saveBook(@RequestBody Book book)
-    {
-        System.out.println(book.toString());
-         String result= userService.saveBook(book);
-         return result;
-    }
+//    @RequestMapping(value = "/book",method = RequestMethod.POST)
+//    public String saveBook(@RequestBody Book book)
+//    {
+//        System.out.println(book.toString());
+//         String result= userService.saveBook(book);
+//         return result;
+//    }
 
     @RequestMapping(value = "/book/{id}",method = RequestMethod.GET)
     public Book get_book(@PathVariable Integer id)
