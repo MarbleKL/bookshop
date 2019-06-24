@@ -38,12 +38,12 @@ public class UserController {
 //         return result;
 //    }
 
-    @RequestMapping(value = "/book/{id}",method = RequestMethod.GET)
-    public Book get_book(@PathVariable Integer id)
-    {
-        Book book = bookRepository.findById(id).get();
-        return book;
-    }
+//    @RequestMapping(value = "/book/{id}",method = RequestMethod.GET)
+//    public Book get_book(@PathVariable Integer id)
+//    {
+//        Book book = bookRepository.findById(id).get();
+//        return book;
+//    }
 
 
     @RequestMapping(value = "/user/{openid}",method = RequestMethod.POST)
